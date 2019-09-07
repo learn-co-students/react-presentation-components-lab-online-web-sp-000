@@ -6,7 +6,7 @@ import './SimpleComponent';
 const SimplerComponent = (props) => {
   return (
 
- 	<div handleClick={props.handleClick}>
+ 	<div onClick={props.handleClick}>
 	 	"I am just happy"	
      </div>
 	 	
