@@ -1,9 +1,6 @@
 import React from 'react'
+
+const SimplerComponent = props => <div 
+    onClick={props.handleClick} > I am just happy</div>
  
-export default class SimplerComponent extends React.Component {
-   render() {
-       return(
-           
-       )
-   }
-}     
+export default SimplerComponent 
