@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom';
 import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
+const handleClick = () => {
+  alert("I've been clicked! I'm so happy!!")
+}
+
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={handleClick} />
   </div>,
   document.getElementById('root')
 );
