@@ -8,3 +8,5 @@ const SimplerComponent = (props) => {
             </div>
         )
 }
+
+export default SimplerComponent
