@@ -10,7 +10,7 @@ import React, {Component} from 'react'
 
      }
 
-     handleClick= (event) => {
+     handleClick= () => {
      this.setState = ({
          mood: "sad"
      })
