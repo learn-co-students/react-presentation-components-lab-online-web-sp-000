@@ -1,50 +1,41 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
 
 
- export default class  SimpleComponent extends React.Component{
-     constructor(props){
-         super(props) 
-         console.log(this.state)
+  export default class  SimpleComponent extends Component{
+     constructor(props) {
+     super(props) 
+         
+     
      this.state = {
-     mood:'happy'
+      mood: 'happy'
+     };
+    }
+         
 
-     }
-
-     handleClick= () => {
-     this.setState = ({
-         mood: "sad"
-     })
-
-
-     }
+     
+    handleClick = () => {
+         const newMood = this.state.mood === 'happy' ? 'sad' : 'happy'
+         this.setState({mood: newMood});
 
 
      }
-
-
-
-
- render () {
-    return (
-  <div >
-  <button onClick={this.handleClick}>{this.state.mood} </button>
-  
-  
-   </div>
-
-
-
-    )
-
-
-
-
- }
-
-
-
-
-
-
-
+     
+    
+    
+    
+  render() {
+    return <div onClick={this.handleClick}>{this.state.mood}</div>;
+  }
 }
+    
+
+    
+
+
+
+
+
+
+
+
+
