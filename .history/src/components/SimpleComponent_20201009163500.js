@@ -1,22 +1,16 @@
 // Code SimpleComponent Here
 import React, { Component } from 'react'
-
 class mySimpleComponent extends Component {
     constructor(props){
         super(props)
         this.state = {mood: "happy"  }
     }
-    handleClick = () => {
-        const toggleMood = this.state.mood === "happy" ? "sad" : "happy"
-        this.setState({mood: toggleMood})
+    handleClick= () => {
+const 
 
     }
         render() { 
-            return (
-            <div
-                onClick={this.handleClick}>{this.state.mood}
-            </div>  
-        )
+        return (  );
     }
 }
  
