@@ -2,8 +2,14 @@
 
 import React from 'react';
 
-const SimplerComponent = props => 
-<div onClick={props.handleClick}>I am just happy</div>
+const SimplerComponent = props => {
+
+
+    return (
+    <div onClick={() => {console.log("hello");}}>I am just happy{props.handleClick}</div>
+    )
+}
+
 
 export default SimplerComponent
 
