@@ -7,7 +7,7 @@ import SimplerComponent from './components/SimplerComponent';
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={() => alert("pop up alerts are bad UI and make people unhappy")} />
   </div>,
   document.getElementById('root')
 );
