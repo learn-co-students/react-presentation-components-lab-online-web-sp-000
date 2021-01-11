@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() })
 const Noop = (props) => { return <p>Noop</p> };
 
 describe('<SimpleComponent />', () => {
-  let wrapper;
+  let wrapper; 
 
   beforeEach(() => {
     wrapper = !SimpleComponent.prototype ?
