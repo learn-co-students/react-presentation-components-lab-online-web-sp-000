@@ -7,8 +7,7 @@ class SimpleComponent extends Component { // declared as class inst of component
       mood: 'happy'
    };
 
-   handleClick = event => {
-      event.preventDefault();
+   handleClick = () => {
       this.setState(prevState => ({
          mood: prevState.mood === 'happy' ?
             'sad' : 'happy'
